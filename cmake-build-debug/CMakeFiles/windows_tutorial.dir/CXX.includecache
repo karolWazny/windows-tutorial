@@ -6,3 +6,17 @@
 
 #IncludeRegexTransform: 
 
+../windows_lib/FirstWindow.h
+WindowTemplate.h
+../windows_lib/WindowTemplate.h
+
+../windows_lib/WindowTemplate.h
+Windows.h
+-
+
+D:/projects/clion/windows_tutorial/main.cpp
+windows.h
+-
+FirstWindow.h
+D:/projects/clion/windows_tutorial/FirstWindow.h
+

@@ -23,6 +23,18 @@ FirstWindow::FirstWindow()
             programInstanceHandle,  //instance handle
             NULL        //additional application data
     );
+    HWND hwndButton = CreateWindow(
+            L"BUTTON",  // Predefined class; Unicode assumed
+            L"OK",      // Button text
+            WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON,  // Styles
+            10,         // x position
+            10,         // y position
+            100,        // Button width
+            100,        // Button height
+            myWindowHandle,     // Parent window
+            NULL,       // No menu.
+            (HINSTANCE)GetWindowLongPtr(myWindowHandle, GWLP_HINSTANCE),
+            NULL);      // Pointer not needed.
 }
 
 void FirstWindow::show(int showCommand)
