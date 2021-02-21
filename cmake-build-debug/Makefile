@@ -127,59 +127,18 @@ windows_tutorial\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\windows_tutorial.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\windows_tutorial.dir\build
 .PHONY : windows_tutorial\fast
 
-FirstWindow.obj: FirstWindow.cpp.obj
+#=============================================================================
+# Target rules for targets named windows_lib
 
-.PHONY : FirstWindow.obj
+# Build rule for target.
+windows_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) windows_lib
+.PHONY : windows_lib
 
-# target to build an object file
-FirstWindow.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\windows_tutorial.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\windows_tutorial.dir\FirstWindow.cpp.obj
-.PHONY : FirstWindow.cpp.obj
-
-FirstWindow.i: FirstWindow.cpp.i
-
-.PHONY : FirstWindow.i
-
-# target to preprocess a source file
-FirstWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\windows_tutorial.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\windows_tutorial.dir\FirstWindow.cpp.i
-.PHONY : FirstWindow.cpp.i
-
-FirstWindow.s: FirstWindow.cpp.s
-
-.PHONY : FirstWindow.s
-
-# target to generate assembly for a file
-FirstWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\windows_tutorial.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\windows_tutorial.dir\FirstWindow.cpp.s
-.PHONY : FirstWindow.cpp.s
-
-MainWindow.obj: MainWindow.cpp.obj
-
-.PHONY : MainWindow.obj
-
-# target to build an object file
-MainWindow.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\windows_tutorial.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\windows_tutorial.dir\MainWindow.cpp.obj
-.PHONY : MainWindow.cpp.obj
-
-MainWindow.i: MainWindow.cpp.i
-
-.PHONY : MainWindow.i
-
-# target to preprocess a source file
-MainWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\windows_tutorial.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\windows_tutorial.dir\MainWindow.cpp.i
-.PHONY : MainWindow.cpp.i
-
-MainWindow.s: MainWindow.cpp.s
-
-.PHONY : MainWindow.s
-
-# target to generate assembly for a file
-MainWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\windows_tutorial.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\windows_tutorial.dir\MainWindow.cpp.s
-.PHONY : MainWindow.cpp.s
+# fast build rule for target.
+windows_lib\fast:
+	$(MAKE) $(MAKESILENT) -f windows_lib\CMakeFiles\windows_lib.dir\build.make /nologo -$(MAKEFLAGS) windows_lib\CMakeFiles\windows_lib.dir\build
+.PHONY : windows_lib\fast
 
 main.obj: main.cpp.obj
 
@@ -216,13 +175,8 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... windows_lib
 	@echo ... windows_tutorial
-	@echo ... FirstWindow.obj
-	@echo ... FirstWindow.i
-	@echo ... FirstWindow.s
-	@echo ... MainWindow.obj
-	@echo ... MainWindow.i
-	@echo ... MainWindow.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

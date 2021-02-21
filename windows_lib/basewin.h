@@ -6,7 +6,7 @@
 #ifndef WINDOWS_TUTORIAL_BASEWIN_H
 #define WINDOWS_TUTORIAL_BASEWIN_H
 
-#include <windows.h>
+#include <Windows.h>
 
 template <class DERIVED_TYPE>
 class BaseWindow

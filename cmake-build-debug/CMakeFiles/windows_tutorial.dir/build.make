@@ -80,61 +80,20 @@ CMakeFiles\windows_tutorial.dir\main.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\windows_tutorial.dir\main.cpp.s /c D:\projects\clion\windows_tutorial\main.cpp
 <<
 
-CMakeFiles\windows_tutorial.dir\FirstWindow.cpp.obj: CMakeFiles\windows_tutorial.dir\flags.make
-CMakeFiles\windows_tutorial.dir\FirstWindow.cpp.obj: ..\FirstWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\projects\clion\windows_tutorial\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/windows_tutorial.dir/FirstWindow.cpp.obj"
-	C:\Program_Files_86\Microsoft_Visual_Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\windows_tutorial.dir\FirstWindow.cpp.obj /FdCMakeFiles\windows_tutorial.dir\ /FS -c D:\projects\clion\windows_tutorial\FirstWindow.cpp
-<<
-
-CMakeFiles\windows_tutorial.dir\FirstWindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/windows_tutorial.dir/FirstWindow.cpp.i"
-	C:\Program_Files_86\Microsoft_Visual_Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx86\x86\cl.exe > CMakeFiles\windows_tutorial.dir\FirstWindow.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\clion\windows_tutorial\FirstWindow.cpp
-<<
-
-CMakeFiles\windows_tutorial.dir\FirstWindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/windows_tutorial.dir/FirstWindow.cpp.s"
-	C:\Program_Files_86\Microsoft_Visual_Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\windows_tutorial.dir\FirstWindow.cpp.s /c D:\projects\clion\windows_tutorial\FirstWindow.cpp
-<<
-
-CMakeFiles\windows_tutorial.dir\MainWindow.cpp.obj: CMakeFiles\windows_tutorial.dir\flags.make
-CMakeFiles\windows_tutorial.dir\MainWindow.cpp.obj: ..\MainWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\projects\clion\windows_tutorial\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/windows_tutorial.dir/MainWindow.cpp.obj"
-	C:\Program_Files_86\Microsoft_Visual_Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\windows_tutorial.dir\MainWindow.cpp.obj /FdCMakeFiles\windows_tutorial.dir\ /FS -c D:\projects\clion\windows_tutorial\MainWindow.cpp
-<<
-
-CMakeFiles\windows_tutorial.dir\MainWindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/windows_tutorial.dir/MainWindow.cpp.i"
-	C:\Program_Files_86\Microsoft_Visual_Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx86\x86\cl.exe > CMakeFiles\windows_tutorial.dir\MainWindow.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\clion\windows_tutorial\MainWindow.cpp
-<<
-
-CMakeFiles\windows_tutorial.dir\MainWindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/windows_tutorial.dir/MainWindow.cpp.s"
-	C:\Program_Files_86\Microsoft_Visual_Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\windows_tutorial.dir\MainWindow.cpp.s /c D:\projects\clion\windows_tutorial\MainWindow.cpp
-<<
-
 # Object files for target windows_tutorial
 windows_tutorial_OBJECTS = \
-"CMakeFiles\windows_tutorial.dir\main.cpp.obj" \
-"CMakeFiles\windows_tutorial.dir\FirstWindow.cpp.obj" \
-"CMakeFiles\windows_tutorial.dir\MainWindow.cpp.obj"
+"CMakeFiles\windows_tutorial.dir\main.cpp.obj"
 
 # External object files for target windows_tutorial
 windows_tutorial_EXTERNAL_OBJECTS =
 
 windows_tutorial.exe: CMakeFiles\windows_tutorial.dir\main.cpp.obj
-windows_tutorial.exe: CMakeFiles\windows_tutorial.dir\FirstWindow.cpp.obj
-windows_tutorial.exe: CMakeFiles\windows_tutorial.dir\MainWindow.cpp.obj
 windows_tutorial.exe: CMakeFiles\windows_tutorial.dir\build.make
+windows_tutorial.exe: windows_lib\windows_lib.lib
 windows_tutorial.exe: CMakeFiles\windows_tutorial.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\projects\clion\windows_tutorial\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable windows_tutorial.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\projects\clion\windows_tutorial\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable windows_tutorial.exe"
 	"D:\Program_Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\windows_tutorial.dir --rc=D:\WINDOW~1\10\bin\100190~1.0\x86\rc.exe --mt=D:\WINDOW~1\10\bin\100190~1.0\x86\mt.exe --manifests  -- C:\Program_Files_86\Microsoft_Visual_Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\windows_tutorial.dir\objects1.rsp @<<
- /out:windows_tutorial.exe /implib:windows_tutorial.lib /pdb:D:\projects\clion\windows_tutorial\cmake-build-debug\windows_tutorial.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:windows  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:windows_tutorial.exe /implib:windows_tutorial.lib /pdb:D:\projects\clion\windows_tutorial\cmake-build-debug\windows_tutorial.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:windows  windows_lib\windows_lib.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.
