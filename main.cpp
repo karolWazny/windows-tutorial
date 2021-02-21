@@ -3,26 +3,23 @@
 #endif
 
 #include <windows.h>
-#include "FirstWindow.h"
+#include "MainWindow.h"
 
-LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
-
-int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR cCmdLine, int nCmdShow)
+int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR, int nCmdShow)
 {
-    FirstWindow::setupClass();
-    FirstWindow window;
+    MainWindow win;
 
-    if(!window.isCreated())
+    if (!win.Create(L"Circle", WS_OVERLAPPEDWINDOW))
     {
         return 0;
     }
 
-    window.show(nCmdShow);
+    ShowWindow(win.Window(), nCmdShow);
 
-    // Run the message loop
+    // Run the message loop.
 
-    MSG msg = {};
-    while(GetMessage(&msg, NULL, 0, 0))
+    MSG msg = { };
+    while (GetMessage(&msg, NULL, 0, 0))
     {
         TranslateMessage(&msg);
         DispatchMessage(&msg);

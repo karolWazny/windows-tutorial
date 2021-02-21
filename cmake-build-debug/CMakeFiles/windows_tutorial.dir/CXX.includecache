@@ -6,3 +6,19 @@
 
 #IncludeRegexTransform: 
 
+../windows_lib/MainWindow.h
+basewin.h
+../windows_lib/basewin.h
+d2d1.h
+-
+
+../windows_lib/basewin.h
+Windows.h
+-
+
+D:/projects/clion/windows_tutorial/main.cpp
+windows.h
+-
+MainWindow.h
+D:/projects/clion/windows_tutorial/MainWindow.h
+
