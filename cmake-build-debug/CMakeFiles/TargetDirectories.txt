@@ -1,0 +1,3 @@
+D:/projects/clion/windows_tutorial/cmake-build-debug/CMakeFiles/windows_tutorial.dir
+D:/projects/clion/windows_tutorial/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/projects/clion/windows_tutorial/cmake-build-debug/CMakeFiles/rebuild_cache.dir
